@@ -15,6 +15,8 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square pradera;
+    private Triangle river;
 
     /**
      * Constructor for objects of class Picture
@@ -51,9 +53,24 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        sun.moveVertical(-30);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.slowMoveVertical(90);
+        
+        pradera = new Square();
+        pradera.changeColor("green");
+        pradera.moveHorizontal(-320);
+        pradera.moveVertical(130);
+        pradera.changeSize(650);
+        pradera.makeVisible();
+        
+        river = new Triangle();
+        river.changeColor("blue");
+        river.changeSize(60, 180);
+        river.moveHorizontal(150);
+        river.moveVertical(110);
+        river.makeVisible();
     }
 
     /**
