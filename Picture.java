@@ -17,6 +17,7 @@ public class Picture
     private Circle sun;
     private Square pradera;
     private Triangle river;
+    private int yPosition;
 
     /**
      * Constructor for objects of class Picture
@@ -99,5 +100,14 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+    
+    /**
+     * Move the Sun 80px down
+     */
+    public void moveSun()
+    {
+        
+        sun.slowMoveVertical(80);
     }
 }
