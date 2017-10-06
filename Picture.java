@@ -17,7 +17,7 @@ public class Picture
     private Circle sun;
     private Square pradera;
     private Triangle river;
-    private int yPosition;
+    private Person person;
 
     /**
      * Constructor for objects of class Picture
@@ -72,6 +72,13 @@ public class Picture
         river.moveHorizontal(150);
         river.moveVertical(110);
         river.makeVisible();
+        
+        person = new Person();
+        person.changeColor("black");
+        person.changeSize(60, 30);
+        person.moveHorizontal(-300);
+        person.moveVertical(18);
+        person.makeVisible();
     }
 
     /**
@@ -103,11 +110,12 @@ public class Picture
     }
     
     /**
-     * Move the Sun 80px down
+     * Move the Sun 80px down and person 80px left
      */
     public void moveSun()
     {
         
         sun.slowMoveVertical(80);
+        person.slowMoveHorizontal(80);
     }
 }
