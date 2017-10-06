@@ -53,10 +53,10 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-30);
+        sun.moveVertical(-60);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(90);
+        
         
         pradera = new Square();
         pradera.changeColor("green");
